@@ -1,0 +1,117 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient( 360deg, rgb(103, 229, 234), rgb(105, 62, 235));
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    background: white;
+    border-radius: 10px;
+    width: 500px;
+    position: absolute;
+    height: 350px;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    font-family: "Secular One", sans-serif;
+    font-size: 300%;
+    height: auto;
+    padding-top: 1.7rem;
+}
+
+#newtask {
+    position: relative;
+    padding: 30px 20px;
+}
+
+#newtask input {
+    width: 75%;
+    height: 45px;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+}
+
+#newtask input:focus {
+    outline: none;
+    border-color: #0d75ec;
+}
+
+#newtask button {
+    position: relative;
+    float: right;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #0d75ec;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#tasks {
+    border-radius: 10px;
+    width: 100%;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 10px;
+}
+
+.task {
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #000000;
+    cursor: pointer;
+    background-color: #e9ff6b;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+}
+
+
+/* Creating Span for Adding are task one by one */
+
+.task span {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+/* Creating Button Here To remove the Tasks in List */
+
+.task button {
+    background-color: #3d56aa;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+}
